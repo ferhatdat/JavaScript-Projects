@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("https://picsum.photos/id/128/600/400");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container {
+    width: 600px;
+    margin: 0 auto ;
+    display: flex;
+    flex-direction: column;
+}
+.todo_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color:rgba(255, 228, 196, 0.8) ;
+    margin-top: 32px;
+
+}
+.todo_title {
+    font-size: 2.5rem;
+}
+.todo_div {
+    display: flex;
+    margin-top: 1rem;
+    width: 400px;
+}
+.todo_input {
+   padding: 10px; 
+   border-radius: 4px 0 0 4px;
+   border:none ;
+   outline: none;
+   font-size: 0.9rem;
+   width: 100%;
+   font-size: 1rem;
+}
+.todo_btn {
+    padding: 6px 8px; 
+    border-radius: 0 4px 4px 0;
+    border:none ;
+    outline: none;
+    font-size: 0.9rem;
+    background-color:aliceblue ;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-size: 2rem;
+}
+.todo_btn:hover {
+    background-color: rgb(183, 183, 197);
+}
+.todo_container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color:rgba(255, 228, 196, 0.8) ;
+    margin-top: 16px;
+    visibility: hidden;
+    font-size: 1.1rem;
+
+}
+.todo {
+    display: flex;
+    justify-content: space-between;
+}
+.todo_left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.todo_right {
+    display: flex;
+    align-items: center;
+    color: rgb(4, 51, 155);
+    font-size: 1.4rem;
+
+}
+.todo_text, .fa-trash {
+    margin-left: .5rem;
+}
+.todo_cb:checked ~ .todo_text {
+    text-decoration:line-through;
+    color: gray;
+}
+.message {
+    background-color: rgba(0, 110, 255, 0.3);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+}
+.fa-trash:hover, .fa-square-check:hover {
+    color: rgb(0, 0, 167);
+    transition: .3s ease all ;
+}
